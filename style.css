@@ -652,3 +652,96 @@ padding-left:55px;
 padding-top:18px;
 
 }
+/* ==========================================
+   HERO V2.1
+========================================== */
+
+.hero-subtitle{
+    font-size:1.15rem;
+    color:#555;
+    margin:25px 0;
+    line-height:1.8;
+}
+
+.hero-highlights{
+
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:35px 0;
+
+}
+
+.highlight-card{
+
+    background:#fff;
+    border-radius:18px;
+    padding:18px 24px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    min-width:140px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.highlight-card strong{
+
+    display:block;
+
+    font-size:24px;
+
+    color:#2E7D32;
+
+}
+
+.highlight-card span{
+
+    font-size:14px;
+
+    color:#777;
+
+}
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+    max-width:430px;
+
+    filter:drop-shadow(0 15px 40px rgba(46,125,50,.25));
+
+}
+
+@media(max-width:768px){
+
+.hero-highlights{
+
+justify-content:center;
+
+}
+
+.highlight-card{
+
+flex:1 1 40%;
+
+}
+
+}
