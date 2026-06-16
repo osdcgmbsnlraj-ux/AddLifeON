@@ -91,3 +91,27 @@ if ("serviceWorker" in navigator) {
     });
 
 }
+/* ==========================
+   Scroll Reveal Animation
+========================== */
+
+function revealOnScroll() {
+
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach((item) => {
+
+        const top = item.getBoundingClientRect().top;
+
+        if (top < window.innerHeight - 100) {
+            item.classList.add("active");
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+
+revealOnScroll();
