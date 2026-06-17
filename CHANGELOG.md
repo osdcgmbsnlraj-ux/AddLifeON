@@ -1,10 +1,6 @@
-# AddLifeON v2.0.0
+# CHANGELOG
 
-Initial release package generated from the current working project.
-
-Planned enhancements:
-- Premium form UI
-- Better validation
-- CSS cleanup
-- Improved JavaScript architecture
-- Mobile navigation
+## v2.1.0 Commit 002.1
+- Baseline package created.
+- Existing functionality preserved.
+- Ready for UI enhancement.
