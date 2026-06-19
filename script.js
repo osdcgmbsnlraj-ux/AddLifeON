@@ -15,20 +15,19 @@ form.addEventListener("submit", async function (e) {
 
     console.log("Form submit detected");
 
-    const formData = {
-
-        name: document.querySelector('input[placeholder*="Name"]')?.value || "",
-        mobile: document.querySelector('input[placeholder*="Mobile"]')?.value || "",
-        email: document.querySelector('input[type="email"]')?.value || "",
-        age: document.querySelector('input[placeholder*="Age"]')?.value || "",
-        dob: document.querySelector('input[type="date"]')?.value || "",
-        weight: document.querySelector('input[placeholder*="Weight"]')?.value || "",
-
-        reason: document.querySelectorAll('select')[0]?.value || "",
-        outcome: document.querySelectorAll('select')[1]?.value || "",
-        remarks: document.querySelector('textarea')?.value || ""
-
-    };
+   const formData = {
+    name: document.getElementById("name").value.trim(),
+    mobile: document.getElementById("mobile").value.trim(),
+    email: document.getElementById("email").value.trim(),
+    gender: document.getElementById("gender").value,
+    dob: document.getElementById("dob").value,
+    weight: document.getElementById("weight").value,
+    reason: document.getElementById("reason").value,
+    goal: document.getElementById("goal").value,
+    batch: document.getElementById("batch").value,
+    experience: document.getElementById("experience").value,
+    medical: document.getElementById("medical").value.trim()
+};
 
     console.log("Sending:", formData);
 

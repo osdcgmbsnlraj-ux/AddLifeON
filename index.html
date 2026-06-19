@@ -674,127 +674,352 @@ Success Stories
 </div>
 
 </section>
-<!-- FORM -->
-
+<!-- JOIN FORM -->
 <section class="section form-section" id="join">
 
-<div class="container">
+    <div class="container">
 
-<h2 class="section-title white">
-Start Your Transformation Journey
-</h2>
+        <div class="join-header">
 
-<form id="joinForm">
-<div class="input-group">
+            <span class="hero-badge">
+                🌿 Join AddLifeON
+            </span>
 
-    <i class="fa-solid fa-user"></i>
+            <h2 class="section-title white">
+                Start Your 90-Day Transformation Journey
+            </h2>
 
-    <input
-        type="text"
-        id="name"
-        placeholder="Full Name *"
-        required>
+            <p class="join-subtitle">
+                Complete the registration form below. Our wellness team will contact you shortly and help you begin your transformation.
+            </p>
+
+        </div>
+
+        <form id="joinForm" class="premium-form">
+
+            <!-- ========================= -->
+            <!-- Personal Information -->
+            <!-- ========================= -->
+
+            <div class="form-card">
+
+                <div class="card-title">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <h3>Personal Information</h3>
+
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+
+                        <label for="name">
+                            Full Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="mobile">
+                            Mobile Number *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="mobile"
+                            name="mobile"
+                            maxlength="10"
+                            placeholder="10 digit mobile number"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="name@example.com">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="gender">
+                            Gender
+                        </label>
+
+                        <select
+                            id="gender"
+                            name="gender">
+
+                            <option value="">
+                                Select Gender
+                            </option>
+
+                            <option>
+                                Male
+                            </option>
+
+                            <option>
+                                Female
+                            </option>
+
+                            <option>
+                                Prefer Not to Say
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="dob">
+                            Date of Birth
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="weight">
+                            Current Weight (Kg)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="weight"
+                            name="weight"
+                            min="20"
+                            max="250"
+                            placeholder="Example: 72">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Wellness Journey Card Starts Here -->
+			
+			<!-- ========================= -->
+<!-- Wellness Journey -->
+<!-- ========================= -->
+
+<div class="form-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-spa"></i>
+
+        <h3>Wellness Journey</h3>
+
+    </div>
+
+    <div class="form-grid">
+
+        <div class="input-group">
+
+            <label for="reason">
+                Reason for Joining
+            </label>
+
+            <select id="reason" name="reason">
+
+                <option value="">Select Reason</option>
+
+                <option>Weight Loss</option>
+                <option>Stress Relief</option>
+                <option>Improve Sleep</option>
+                <option>Improve Flexibility</option>
+                <option>Meditation</option>
+                <option>General Fitness</option>
+                <option>Back Pain Relief</option>
+                <option>Healthy Lifestyle</option>
+
+            </select>
+
+        </div>
+
+        <div class="input-group">
+
+            <label for="goal">
+                Expected Goal after 90 Days
+            </label>
+
+            <select id="goal" name="goal">
+
+                <option value="">Select Goal</option>
+
+                <option>Weight Loss</option>
+                <option>Reduce Stress</option>
+                <option>Better Sleep</option>
+                <option>Improve Flexibility</option>
+                <option>Increase Energy</option>
+                <option>Improve Fitness</option>
+                <option>Healthy Lifestyle</option>
+
+            </select>
+
+        </div>
+
+        <div class="input-group">
+
+            <label for="batch">
+                Preferred Batch
+            </label>
+
+            <select id="batch" name="batch">
+
+                <option>Morning (6:30 AM)</option>
+                <option>Evening</option>
+
+            </select>
+
+        </div>
+
+        <div class="input-group">
+
+            <label for="experience">
+                Yoga Experience
+            </label>
+
+            <select id="experience" name="experience">
+
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+
+            </select>
+
+        </div>
+
+    </div>
 
 </div>
 
+<!-- ========================= -->
+<!-- Health Information -->
+<!-- ========================= -->
 
-<div class="input-group">
+<div class="form-card">
 
-    <i class="fa-solid fa-phone"></i>
+    <div class="card-title">
 
-    <input
-        type="tel"
-        id="mobile"
-        placeholder="Mobile Number *"
-        required>
+        <i class="fa-solid fa-heart-pulse"></i>
 
-</div>
+        <h3>Health Information</h3>
 
-<div class="input-group">
+    </div>
 
-    <i class="fa-solid fa-envelope"></i>
+    <div class="input-group full-width">
 
-    <input
-        type="email"
-        id="email"
-        placeholder="Email Address">
+        <label for="medical">
 
-</div>
+            Medical Condition / Health Notes
 
-<div class="input-group">
+        </label>
 
-    <i class="fa-solid fa-user-clock"></i>
+        <textarea
+            id="medical"
+            name="medical"
+            rows="5"
+            placeholder="Mention any medical condition, surgery, injury or other information that will help us guide your Yoga journey..."></textarea>
 
-    <input
-        type="number"
-        id="age"
-        placeholder="Age">
+    </div>
 
 </div>
 
-<div class="input-group">
+<!-- ========================= -->
+<!-- Consent -->
+<!-- ========================= -->
 
-    <i class="fa-solid fa-calendar-days"></i>
+<div class="form-card">
 
-    <input
-        type="date"
-        id="dob">
+    <div class="card-title">
 
-</div>
+        <i class="fa-solid fa-shield-heart"></i>
 
-<div class="input-group">
+        <h3>Declaration</h3>
 
-    <i class="fa-solid fa-weight-scale"></i>
+    </div>
 
-    <input
-        type="number"
-        id="weight"
-        placeholder="Current Weight (Kg)">
+    <label class="checkbox-row">
 
-</div>
-<div class="input-group">
+        <input
+            type="checkbox"
+            id="privacy"
+            required>
 
-    <i class="fa-solid fa-leaf"></i>
-<select>
-<option>Reason for Joining Yoga</option>
-<option>Weight Loss</option>
-<option>Stress Relief</option>
-<option>Improve Sleep</option>
-<option>Improve Flexibility</option>
-<option>Meditation</option>
-<option>General Fitness</option>
-</select>
+        <span>
 
-</div>
+            I agree to the Privacy Policy and Terms of Use.
 
-<div class="input-group">
+        </span>
 
-    <i class="fa-solid fa-bullseye"></i>
+    </label>
 
-<select>
-<option>Expected Outcome After 90 Days</option>
-<option>Weight Loss</option>
-<option>Better Sleep</option>
-<option>Reduce Stress</option>
-<option>Improve Fitness</option>
-<option>Improve Flexibility</option>
-<option>Healthy Lifestyle</option>
-</select>
+    <label class="checkbox-row">
 
-</div>
-<div class="input-group">
+        <input
+            type="checkbox"
+            id="whatsapp">
 
-    <i class="fa-solid fa-notes-medical"></i>
+        <span>
 
-    <textarea></textarea>
+            I agree to receive WhatsApp updates regarding Yoga classes and wellness programs.
+
+        </span>
+
+    </label>
 
 </div>
 
-<button type="submit">
+<!-- ========================= -->
+<!-- Submit -->
+<!-- ========================= -->
 
-Start My Transformation Journey
+<div class="submit-area">
 
-</button>
+    <button
+        type="submit"
+        id="submitBtn"
+        class="submit-btn">
+
+        <i class="fa-solid fa-leaf"></i>
+
+        Start My Transformation Journey
+
+    </button>
+
+    <p class="secure-text">
+
+        🔒 Your information is kept confidential and used only for AddLifeON wellness programs.
+
+    </p>
+
+</div>
 
 </form>
 
