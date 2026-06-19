@@ -982,3 +982,25 @@ font-size:15px;
 }
 
 }
+
+/* =====================================================
+   AddLifeON v2.1.2 UI Polish Overrides
+===================================================== */
+.hero{padding:60px 0 50px;}
+.hero-grid{align-items:center;gap:40px;}
+.hero-content{max-width:520px;}
+.hero-image{display:flex;justify-content:center;align-items:center;}
+.hero-image img{width:100%;max-width:520px;height:auto;display:block;}
+.founder-section{padding:70px 0;}
+.founder-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center;}
+.founder-image{display:flex;justify-content:center;}
+.founder-image img{width:100%;max-width:420px;height:auto;display:block;}
+.section{padding:75px 0;}
+.nav-container{padding:16px 0;}
+.logo img{height:72px;}
+@media(max-width:992px){
+.hero-grid,.founder-grid{grid-template-columns:1fr;text-align:center;}
+.hero-content{max-width:100%;}
+.hero-image img{max-width:360px;}
+.founder-image img{max-width:320px;}
+}
