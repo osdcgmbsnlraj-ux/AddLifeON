@@ -1,0 +1,493 @@
+/* ==========================================================
+   AddLifeON Design System (ADS)
+   Version : 1.0
+   Release : Sprint 1
+   Author  : AddLifeON Development Team
+
+   "Yoga for You, Nature for All"
+==========================================================*/
+
+
+/* ==========================================================
+   ROOT VARIABLES
+==========================================================*/
+
+:root{
+
+    /* ---------- Brand ---------- */
+
+    --primary:#2E7D32;
+    --primary-dark:#1B5E20;
+    --primary-light:#66BB6A;
+
+    --accent:#FF9800;
+    --accent-dark:#F57C00;
+
+    --success:#43A047;
+    --warning:#FB8C00;
+    --danger:#E53935;
+
+    /* ---------- Background ---------- */
+
+    --bg:#FAFCFA;
+    --surface:#FFFFFF;
+    --surface-light:#F5FAF5;
+    --surface-dark:#EAF5EA;
+
+    /* ---------- Text ---------- */
+
+    --text:#222222;
+    --text-light:#666666;
+    --text-muted:#8A8A8A;
+    --text-white:#FFFFFF;
+
+    /* ---------- Border ---------- */
+
+    --border:#E5EFE5;
+    --border-dark:#D7E4D7;
+
+    /* ---------- Radius ---------- */
+
+    --radius-xs:8px;
+    --radius-sm:12px;
+    --radius-md:18px;
+    --radius-lg:24px;
+    --radius-xl:32px;
+    --radius-pill:999px;
+
+    /* ---------- Shadows ---------- */
+
+    --shadow-sm:
+        0 6px 18px rgba(0,0,0,.05);
+
+    --shadow-md:
+        0 15px 40px rgba(0,0,0,.08);
+
+    --shadow-lg:
+        0 25px 70px rgba(0,0,0,.12);
+
+    /* ---------- Transition ---------- */
+
+    --transition:.35s ease;
+
+}
+
+
+/* ==========================================================
+   TYPOGRAPHY
+==========================================================*/
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:17px;
+
+    line-height:1.75;
+
+    color:var(--text);
+
+    background:var(--bg);
+
+}
+
+
+/* Headings */
+
+h1,h2,h3,h4,h5,h6{
+
+    color:var(--primary-dark);
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+h1{
+
+    font-size:3.5rem;
+
+}
+
+h2{
+
+    font-size:2.6rem;
+
+}
+
+h3{
+
+    font-size:1.8rem;
+
+}
+
+h4{
+
+    font-size:1.3rem;
+
+}
+
+p{
+
+    color:var(--text-light);
+
+    margin-bottom:18px;
+
+}
+
+
+/* ==========================================================
+   SECTION
+==========================================================*/
+
+.section{
+
+    padding:90px 0;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:18px;
+
+}
+
+.section-description{
+
+    max-width:760px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:var(--text-light);
+
+}
+
+
+/* ==========================================================
+   BADGES
+==========================================================*/
+
+.badge,
+.hero-badge,
+.section-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 22px;
+
+    background:#E8F5E9;
+
+    color:var(--primary);
+
+    border-radius:var(--radius-pill);
+
+    font-weight:600;
+
+    font-size:.95rem;
+
+}
+
+
+/* ==========================================================
+   BUTTONS
+==========================================================*/
+
+.btn,
+.primary-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:16px 34px;
+
+    border:none;
+
+    border-radius:var(--radius-pill);
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.btn:hover,
+.primary-btn:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-3px);
+
+}
+
+.secondary-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 34px;
+
+    border-radius:var(--radius-pill);
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+.secondary-btn:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+/* ==========================================================
+   CARD
+==========================================================*/
+
+.card{
+
+    background:var(--surface);
+
+    border-radius:var(--radius-lg);
+
+    padding:35px;
+
+    box-shadow:var(--shadow-md);
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+
+/* ==========================================================
+   FORM
+==========================================================*/
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border:2px solid var(--border);
+
+    border-radius:var(--radius-sm);
+
+    background:#fff;
+
+    font-size:16px;
+
+    transition:var(--transition);
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:
+    0 0 0 4px rgba(46,125,50,.10);
+
+}
+
+
+/* ==========================================================
+   IMAGE
+==========================================================*/
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+/* ==========================================================
+   CONTAINER
+==========================================================*/
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+/* ==========================================================
+   ANIMATIONS
+==========================================================*/
+
+.float{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+}
+
+.fade{
+
+    animation:fade .8s ease;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+==========================================================*/
+
+@media(max-width:992px){
+
+.section{
+
+padding:70px 0;
+
+}
+
+h1{
+
+font-size:2.8rem;
+
+}
+
+h2{
+
+font-size:2.2rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+body{
+
+font-size:16px;
+
+}
+
+.section{
+
+padding:60px 0;
+
+}
+
+h1{
+
+font-size:2.2rem;
+
+}
+
+h2{
+
+font-size:1.9rem;
+
+}
+
+.card{
+
+padding:25px;
+
+}
+
+.btn,
+.primary-btn,
+.secondary-btn{
+
+width:100%;
+
+}
+
+}
