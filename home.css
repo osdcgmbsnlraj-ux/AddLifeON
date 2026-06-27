@@ -1,0 +1,219 @@
+/* ==========================================================
+   AddLifeON Home Styles
+   Version : 2.2.0
+   File    : home.css
+   Purpose : Hero, Founder, Programs, Journey, Testimonials
+========================================================== */
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:calc(100vh - 82px);
+    display:flex;
+    align-items:center;
+    background:linear-gradient(135deg,#f8fff8 0%,#ffffff 55%,#edf8ed 100%);
+    overflow:hidden;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:4rem;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:580px;
+}
+
+.hero-title{
+    margin-bottom:1rem;
+}
+
+.hero-subtitle{
+    font-size:1.1rem;
+    color:var(--text-light);
+    margin-bottom:2rem;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+    margin:2rem 0;
+}
+
+.hero-highlights{
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+}
+
+.highlight-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius-lg);
+    padding:1rem 1.2rem;
+    min-width:130px;
+    box-shadow:var(--shadow-sm);
+    transition:var(--transition);
+}
+
+.highlight-card:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow-md);
+}
+
+.hero-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-logo-card{
+    position:relative;
+    background:rgba(255,255,255,.55);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.7);
+    border-radius:50%;
+    width:520px;
+    height:520px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 25px 60px rgba(46,125,50,.12);
+}
+
+.hero-logo-card img{
+    width:72%;
+    animation:heroFloat 6s ease-in-out infinite;
+}
+
+.hero-sanskrit{
+    margin-top:1rem;
+    color:var(--primary-dark);
+    font-size:1.5rem;
+    font-weight:600;
+}
+
+.hero-translation{
+    color:var(--text-light);
+    font-style:italic;
+}
+
+/* ================= FOUNDER ================= */
+
+.founder-section{
+    background:var(--surface-light);
+}
+
+.founder-grid{
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:4rem;
+    align-items:center;
+}
+
+.founder-image-card{
+    background:#fff;
+    padding:1.5rem;
+    border-radius:var(--radius-xl);
+    box-shadow:var(--shadow-md);
+}
+
+.founder-image-card img{
+    border-radius:20px;
+}
+
+.founder-signature{
+    text-align:center;
+    margin-top:1.2rem;
+}
+
+.founder-tag{
+    display:inline-block;
+    padding:.55rem 1rem;
+    background:#e8f5e9;
+    border-radius:999px;
+    color:var(--primary);
+    font-weight:600;
+    margin-bottom:1rem;
+}
+
+.qualification-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1rem;
+    margin-top:2rem;
+}
+
+.qualification-card{
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:var(--radius-md);
+    padding:1.25rem;
+    text-align:center;
+    box-shadow:var(--shadow-sm);
+    transition:var(--transition);
+}
+
+.qualification-card:hover{
+    transform:translateY(-4px);
+    box-shadow:var(--shadow-md);
+}
+
+.philosophy-card{
+    margin-top:3rem;
+    text-align:center;
+    background:linear-gradient(135deg,#2e7d32,#43a047);
+    color:#fff;
+    border-radius:var(--radius-xl);
+    padding:3rem;
+    box-shadow:var(--shadow-lg);
+}
+
+.philosophy-card h2,
+.philosophy-card p,
+.philosophy-card span{
+    color:#fff;
+}
+
+/* ================= PROGRAMS ================= */
+
+.program-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:2rem;
+}
+
+.program-card{
+    background:#fff;
+    border-radius:var(--radius-lg);
+    padding:2rem;
+    box-shadow:var(--shadow-sm);
+    transition:var(--transition);
+    border:1px solid var(--border);
+}
+
+.program-card:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--shadow-lg);
+}
+
+/* ================= TESTIMONIALS ================= */
+
+.testimonial-card{
+    background:#fff;
+    border-left:5px solid var(--primary);
+    border-radius:var(--radius-lg);
+    padding:2rem;
+    box-shadow:var(--shadow-sm);
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes heroFloat{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+}
